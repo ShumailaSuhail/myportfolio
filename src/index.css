@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Enable manual dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Let Lenis control scrolling */
+html {
+  scroll-behavior: auto;
+}
+
+/* Improve font rendering */
+body {
+  @apply antialiased;
+}
