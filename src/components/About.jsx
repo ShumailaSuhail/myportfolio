@@ -20,22 +20,22 @@ export default function About() {
 
   const highlights = [
     {
-      title: "Technical Stack",
+      title: "Systems Thinking",
       icon: <Code2 size={22} strokeWidth={1.8} />,
       description:
-        "React, Tailwind, TypeScript, NestJS, modern frontend tooling.",
+        "Designing scalable frontend architecture with clear structure and reusable patterns.",
     },
     {
-      title: "Education",
-      icon: <GraduationCap size={22} strokeWidth={1.8} />,
-      description:
-        "BS Software Engineering — strong foundation in systems & architecture.",
-    },
-    {
-      title: "Experience",
+      title: "Refactoring Mindset",
       icon: <FolderKanban size={22} strokeWidth={1.8} />,
       description:
-        "Built scalable UI systems and product-focused web applications.",
+        "Improving code quality by simplifying logic, reducing complexity, and eliminating technical debt.",
+    },
+    {
+      title: "Engineering Foundation",
+      icon: <GraduationCap size={22} strokeWidth={1.8} />,
+      description:
+        "Strong academic and practical background in software engineering principles.",
     },
   ];
 
@@ -48,7 +48,7 @@ export default function About() {
             About
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
-            Structured creativity, product-focused thinking.
+            Clean structure. Scalable frontend systems.
           </h2>
         </div>
 
@@ -61,9 +61,10 @@ export default function About() {
           {/* Content */}
           <div className="space-y-10">
             <p className="text-base leading-relaxed text-gray-600 dark:text-gray-400">
-              I design and build frontend systems that balance visual creativity
-              with strong structural architecture. My approach focuses on
-              maintainability, performance, and user clarity.
+              I specialize in structuring frontend applications with clean
+              architecture, scalable folder systems, and reusable patterns. I
+              enjoy debugging complex issues and refactoring messy
+              implementations into maintainable codebases.
             </p>
 
             {/* Highlights */}
