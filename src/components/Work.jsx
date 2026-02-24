@@ -1,7 +1,6 @@
 import work1 from "../assets/work-1.png";
 import work2 from "../assets/work-2.png";
 import work3 from "../assets/work-3.png";
-import work4 from "../assets/work-4.png";
 
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 
@@ -22,15 +21,10 @@ export default function Work() {
       image: work3,
       category: "Web Experience",
     },
-    {
-      title: "Design System Project",
-      image: work4,
-      category: "UI Engineering",
-    },
   ];
 
   return (
-    <section id="work" className="scroll-mt-24 py-18">
+    <section id="work" className="scroll-mt-24 py-16">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -47,7 +41,7 @@ export default function Work() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <div
               key={project.title}

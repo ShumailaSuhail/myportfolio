@@ -1,46 +1,55 @@
 import profileImg from "../assets/profile-img.jpeg";
 import { ArrowRight, Download } from "lucide-react";
-import handIcon from "../assets/hand-icon.png";
 
 export default function Header() {
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-      <img src={profileImg} alt="Profile" className="rounded-full w-32" />
+    <section className="min-h-[90vh] flex items-center justify-center px-6 mt-6">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Profile */}
+        <img
+          src={profileImg}
+          alt="Shumaila Suhail"
+          className="w-28 sm:w-32 rounded-full mx-auto mb-6"
+        />
 
-      <h3 className="flex items-end justify-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hi! I&apos;m Shumaila Suhail
-        <img src={handIcon} alt="Hand Icon" className="w-6 h-6" />
-      </h3>
+        {/* Small Intro Label */}
+        <p className="text-sm uppercase tracking-[0.25em] text-gray-500 dark:text-gray-400 mb-4">
+          Frontend Engineer
+        </p>
 
-      <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        frontend web developer based in Pakistan.
-      </h1>
+        {/* Main Headline */}
+        <h1 className="text-4xl sm:text-6xl lg:text-[64px] font-semibold leading-tight tracking-tight mb-6">
+          Designing structured,
+          <br className="hidden sm:block" />
+          scalable web experiences.
+        </h1>
 
-      <p className="max-w-2xl mx-auto font-Ovo">
-        I am a frontend developer from Pakistan, with experience in building
-        responsive and user-friendly websites.
-      </p>
+        {/* Supporting Text */}
+        <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-10">
+          I build thoughtful, performance-focused interfaces with clean
+          architecture and modern frontend tooling.
+        </p>
 
-      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-        {/* Contact Button */}
-        <a
-          href="#contact"
-          className="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"
-        >
-          contact me
-          <ArrowRight size={16} strokeWidth={2} />
-        </a>
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#contact"
+            className="px-8 py-3 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:opacity-90 transition"
+          >
+            Contact Me
+            <ArrowRight size={18} />
+          </a>
 
-        {/* Resume Button */}
-        <a
-          href="/resume.pdf"
-          download
-          className="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white"
-        >
-          my resume
-          <Download size={16} strokeWidth={2} />
-        </a>
+          <a
+            href="/Shumaila Suhail-Software Engineer.docx .pdf"
+            download
+            className="px-8 py-3 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2"
+          >
+            Download Resume
+            <Download size={18} />
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
